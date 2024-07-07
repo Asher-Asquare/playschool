@@ -1,0 +1,78 @@
+/* src/styles/Hero.css */
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 10%;
+    background: #f9f9f9;
+    position: relative;
+  }
+  
+  .home .content {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .home .content h3 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .home .content h3 span {
+    color: #ff6b6b;
+  }
+  
+  .home .content p {
+    margin: 1rem 0;
+    font-size: 1rem;
+    color: var(--black);
+  }
+  
+  .home .content .btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: #ff6b6b;
+    color: #fff;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+  }
+  
+  .home .content .btn:hover {
+    background: #ff3b3b;
+  }
+  
+  .home .image {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .home .image img {
+    max-width: 80%;
+    border-radius: 1rem;
+  }
+  
+  .custom-shape-divider-bottom-1684324473 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  
+  .custom-shape-divider-bottom-1684324473 svg {
+    position: relative;
+    display: block;
+    width: calc(137% + 1.3px);
+    height: 80px;
+  }
+  
+  .custom-shape-divider-bottom-1684324473 .shape-fill {
+    fill: #f0e285;
+  }
+  

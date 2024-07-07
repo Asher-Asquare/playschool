@@ -1,0 +1,116 @@
+/* src/components/EnrollNow.css */
+
+.enroll-now {
+    padding: 2rem 5%;
+    background: #d2d2d1;
+    color: #333;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.enroll-now .heading {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.enroll-now .heading span {
+    color: #d9534f;
+}
+
+.enroll-now form {
+    max-width: 550px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.enroll-now .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.enroll-now .form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.enroll-now .form-group input,
+.enroll-now .form-group textarea {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    transition: border-color 0.3s;
+}
+
+.enroll-now .form-group input:focus,
+.enroll-now .form-group textarea:focus {
+    border-color: #d9534f;
+    outline: none;
+}
+
+.enroll-now .form-group textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+.enroll-now .btn {
+    display: inline-block;
+    background: #b6d955;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.enroll-now .btn:hover {
+    background: #c9302c;
+}
+
+.dark .enroll-now {
+    background: #333;
+    color: #f0e285;
+}
+
+.dark .enroll-now form {
+    background: #444;
+    color: #fff;
+}
+
+.dark .enroll-now .heading {
+    color: #fff;
+}
+
+.dark .enroll-now .form-group label {
+    color: #fff;
+}
+
+.dark .enroll-now .form-group input,
+.dark .enroll-now .form-group textarea {
+    background: #555;
+    color: #fff;
+    border: 1px solid #666;
+}
+
+.dark .enroll-now .form-group input:focus,
+.dark .enroll-now .form-group textarea:focus {
+    border-color: #f0e285;
+}
+
+.dark .enroll-now .btn {
+    background: #f0e285;
+    color: #333;
+}
+
+.dark .enroll-now .btn:hover {
+    background: #d9b957;
+}

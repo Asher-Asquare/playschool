@@ -1,0 +1,83 @@
+/* src/styles/Activities.css */
+
+.activities {
+  padding: 2rem 9%;
+  background: var(--light-bg);
+}
+
+.activities .heading {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+.activities .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); /* Increased min-width */
+  gap: 1.5rem; /* Increased gap */
+}
+
+.activities .box-container .box {
+  padding: 2rem 1rem; /* Increased padding */
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  border-radius: 3rem;
+  outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+  outline-offset: -1rem;
+  background: var(--white);
+  transition: var(--transition);
+}
+
+.activities .box-container .box img {
+  height: 4rem; /* Increased image size */
+  transition: var(--transition);
+}
+
+.activities .box-container .box:hover img {
+  transform: scale(1.1);
+}
+
+.activities .box-container .box h3 {
+  font-size: 1.5rem; /* Increased font size */
+  padding: 2.5rem 0; /* Increased padding */
+  color: var(--black);
+}
+
+.dark .activities {
+  background: var(--dark-bg);
+}
+
+.dark .activities .heading {
+  color: var(--white);
+}
+
+.dark .activities .box-container .box {
+  background: var(--dark-box-bg);
+  color: var(--white);
+}
+
+.dark .activities .box-container .box h3 {
+  color: var(--white);
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .activities .box-container {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+  }
+
+  .activities .box-container .box {
+      padding: 3rem 2rem;
+  }
+
+  .activities .box-container .box h3 {
+      font-size: 2rem;
+      padding: 2rem 0;
+  }
+
+  .activities .box-container .box img {
+      height: 8rem;
+  }
+}

@@ -1,0 +1,63 @@
+/* Teacher.css */
+
+.teacher {
+    padding: 30px;
+    background: #f0e285;
+    color: #000;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.teacher .heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.teacher .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.teacher .box {
+    flex: 1;
+    margin: 12px;
+    padding: 35px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.teacher .box img {
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.teacher .box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.teacher .box p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.teacher .box .share i {
+    margin: 0 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.dark .teacher {
+    background: #000;
+    color: #fff;
+}
+
+.dark .teacher .box {
+    background: #333;
+    color: #fff;
+}

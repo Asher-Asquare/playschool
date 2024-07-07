@@ -1,0 +1,119 @@
+/* src/styles/Footer.css */
+
+.footer {
+    background: #f0e285;
+    color: #333;
+    padding: 2rem 5%;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+    transition: gap 0.3s;
+}
+
+.footer .box-container .box {
+    background: #fafaf9;
+    padding: 2rem;
+    border-radius: .5rem;
+    transition: background 0.3s, padding 0.3s, border-radius 0.3s;
+}
+
+.footer .box-container .box h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    transition: color 0.3s, margin-bottom 0.3s;
+}
+
+.footer .box-container .box a {
+    color: #666;
+    display: block;
+    margin: .5rem 0;
+    text-decoration: none;
+    transition: color 0.3s, margin 0.3s;
+}
+
+.footer .box-container .box a i {
+    color: #333;
+    margin-right: .5rem;
+    transition: color 0.3s, margin-right 0.3s;
+}
+
+.footer .credit {
+    margin-top: 2rem;
+    font-size: 1.0rem;
+    color: #555;
+    transition: color 0.3s, margin-top 0.3s, font-size 0.3s;
+}
+
+.footer .box-container .box a:hover {
+    color: #333;
+}
+
+.footer .box-container .box a:hover i {
+    color: #d9534f;
+}
+
+.dark .footer {
+    background: #333;
+    color: #ccc;
+}
+
+.dark .footer .box-container .box {
+    background: #444;
+}
+
+.dark .footer .box-container .box h3 {
+    color: #ccc;
+}
+
+.dark .footer .box-container .box a {
+    color: #999;
+}
+
+.dark .footer .box-container .box a:hover {
+    color: #fff;
+}
+
+.dark .footer .box-container .box a:hover i {
+    color: #ff6b6b;
+}
+
+.dark .footer .credit {
+    color: #888;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        padding: 1.5rem 3%;
+    }
+
+    .footer .box-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .footer .box-container .box {
+        padding: 1.5rem;
+        border-radius: .3rem;
+    }
+
+    .footer .box-container .box h3 {
+        font-size: 1.8rem;
+        margin-bottom: .8rem;
+    }
+
+    .footer .box-container .box a {
+        margin: .4rem 0;
+    }
+
+    .footer .credit {
+        font-size: 1.3rem;
+        margin-top: 1.5rem;
+    }
+}

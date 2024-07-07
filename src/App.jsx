@@ -1,35 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import './App.css';
+import Hero from './components/Hero';
+import About from './components/About';
+import Education from './components/Education';
+import Teacher from './components/Teacher';
+import Gallery from './components/Gallery';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Activities from './components/Activities';
+import EnrollNow from './components/SubComponents/EnrollNow';
+// import Admissions from './components/SubComponents/Admissions';
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+    const [theme, setTheme] = useState('light');
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    useEffect(() => {
+        document.body.className = theme;
+    }, [theme]);
+
+    return (
+        <Router>
+            <Navbar theme={theme} setTheme={setTheme} />
+            <Routes>
+                <Route path="/" element={
+                    <>
+                        <Hero />
+                        <About />
+                        <Education />
+                        <Teacher />
+                        <Activities />
+                        <Gallery />
+                        <Contact />
+                        <Footer />
+                    </>
+                } />
+                <Route path="/enroll-now" element={<EnrollNow />} />
+                {/* <Route path="/admissions" element={<Admissions />} /> */}
+            </Routes>
+        </Router>
+    );
 }
 
-export default App
+export default App;

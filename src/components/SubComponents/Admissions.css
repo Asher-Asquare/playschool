@@ -1,0 +1,54 @@
+.admissions {
+    padding: 50px;
+    background: #fff;
+    color: #000;
+  }
+  
+  .admissions .heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .admissions form {
+    max-width: 550px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admissions .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .admissions .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .admissions .form-group input,
+  .admissions .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .admissions .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .admissions .btn:hover {
+    background: #0056b3;
+  }
+  

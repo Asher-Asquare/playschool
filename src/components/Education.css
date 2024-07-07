@@ -1,0 +1,56 @@
+/* Education.css */
+
+.education {
+    padding: 50px;
+    background: #fff;
+    color: #000;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.education .heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.education .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.education .box {
+    flex: 1;
+    margin: 20px;
+    padding: 25px;
+    background: #f0e285;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.education .box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.education .box p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.education .box img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.dark .education {
+    background: #000;
+    color: #fff;
+}
+
+.dark .education .box {
+    background: #333;
+    color: #fff;
+}
