@@ -73,7 +73,11 @@
 }
 
 .custom-shape-divider-bottom-1684324473 .shape-fill {
-  fill: #0a0a09;
+  fill: #f0e285;
+}
+
+.dark .custom-shape-divider-bottom-1684324473 .shape-fill {
+  fill: #050505;
 }
 
 /* Media Query for Tablets */

@@ -1,7 +1,7 @@
 /* Contact.css */
 
 .contact {
-    padding: 5%;
+    padding: 50px;
     background: #fff;
     color: #000;
     transition: background-color 0.5s, color 0.5s;
@@ -10,35 +10,32 @@
 .contact .heading {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 50px;
 }
 
 .contact .icons-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 2rem;
+    margin-bottom: 50px;
 }
 
 .contact .icons {
     text-align: center;
-    width: 100%;
-    margin-bottom: 1rem;
 }
 
 .contact .icons i {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    margin-bottom: 10px;
     color: #000;
 }
 
 .contact .icons h3 {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
 .contact .icons p {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .contact .row {
@@ -48,48 +45,53 @@
 }
 
 .contact .row .image {
-    display: none; /* Hide the image on small devices */
+    flex: 1;
+    padding: 20px;
+}
+
+.contact .row .image img {
+    max-width: 100%;
+    height: auto;
 }
 
 .contact .row form {
-    width: 100%; /* Adjusted width for form on small devices */
-    padding: 1rem;
-    text-align: center;
+    flex: 2;
+    padding: 20px;
 }
 
 .contact .row form h3 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 
 .contact .row form .inputBox {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
 }
 
 .contact .row form .inputBox input {
-    width: 100%; /* Adjusted input width for form fields */
-    padding: 0.7rem;
+    width: 48%;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
+    font-size: 1rem;
+    outline: none;
 }
 
 .contact .row form textarea {
     width: 100%;
-    padding: 0.7rem;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    outline: none;
     resize: vertical;
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
 }
 
 .contact .row form .btn {
-    padding: 0.7rem 1rem;
+    padding: 10px 20px;
     background: #000;
     color: #fff;
     border: none;
@@ -122,48 +124,44 @@
     color: #fff;
 }
 
+.dark .contact .row .image {
+    background: #000;
+}
+
 /* Responsive Design Adjustments */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .contact .icons-container {
         justify-content: space-between;
+        flex-direction: column; /* Stack icons vertically */
+        align-items: center; /* Center icons horizontally */
     }
 
     .contact .icons {
-        flex: 0 1 calc(33% - 1rem);
-        max-width: calc(33% - 1rem);
-        text-align: center;
+        width: 100%;
         margin-bottom: 1rem;
     }
 
-    .contact .icons p {
-        font-size: 0.9rem;
-        margin-bottom: 0.5rem;
-    }
-
     .contact .row {
-        flex-direction: row;
-        align-items: flex-start;
+        flex-direction: column; /* Stack row items vertically */
+        align-items: center; /* Center row items horizontally */
     }
 
     .contact .row .image {
-        display: block; /* Display the image on larger screens */
-        width: 30%; /* Adjusted image width for larger screens */
-        padding: 1rem;
-        text-align: left;
+        display: none; /* Hide the image on small devices */
     }
 
     .contact .row form {
-        width: 65%; /* Adjusted form width for larger screens */
+        width: 100%; /* Full width for form on small devices */
         padding: 1rem;
-        text-align: left;
+        text-align: center;
     }
 
     .contact .row form .inputBox {
-        flex-direction: row;
+        flex-direction: column; /* Stack input boxes vertically */
     }
 
     .contact .row form .inputBox input {
-        width: 48%; /* Adjusted input width for form fields */
-        margin-right: 2%;
+        width: 100%; /* Full width for input fields */
+        margin-bottom: 1rem;
     }
 }

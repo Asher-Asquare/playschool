@@ -4,6 +4,14 @@
   background: #f0e285;
 }
 
+.dark .gallery{
+  background: black;
+}
+
+.dark .gallery .heading{
+  color: #fff;
+}
+
 .gallery .heading {
   text-align: center;
   margin-bottom: 2rem;

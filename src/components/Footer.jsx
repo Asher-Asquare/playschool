@@ -29,7 +29,7 @@ const Footer = () => {
           <h3>Extra Links</h3>
           <a href="#"> <i className="fas fa-caret-right"></i> Privacy Policy</a>
           <a href="#"> <i className="fas fa-caret-right"></i> Terms of Use</a>
-          <a href="#"> <i className="fas fa-caret-right"></i> Site Map</a>
+          <a href="#location-map"> <i className="fas fa-caret-right"></i> Site Map</a>
           <a href="#"> <i className="fas fa-caret-right"></i> FAQs</a>
           <a href="#"> <i className="fas fa-caret-right"></i> Accessibility Statement</a>
         </div>

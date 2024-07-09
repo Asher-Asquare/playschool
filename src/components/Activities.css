@@ -47,20 +47,19 @@
 }
 
 .dark .activities {
-  background: var(--dark-bg);
+  background: #fff;
 }
 
 .dark .activities .heading {
-  color: var(--white);
+  color: black;
 }
 
 .dark .activities .box-container .box {
-  background: var(--dark-box-bg);
-  color: var(--white);
+  background: #333;
 }
 
 .dark .activities .box-container .box h3 {
-  color: var(--white);
+  color: #fff;
 }
 
 /* Responsive Design Adjustments */
