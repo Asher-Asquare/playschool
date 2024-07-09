@@ -1,0 +1,14 @@
+/* LocationMap.css */
+
+.location-map {
+    width: 100%;
+    max-width: 100%; /* Adjust maximum width as needed */
+    margin: 0 auto; /* Center the map horizontally */
+    overflow: hidden; /* Ensure map does not overflow its container */
+}
+
+.location-map iframe {
+    width: 100%;
+    height: 380px; /* Adjust height as needed */
+    border: 0;
+}

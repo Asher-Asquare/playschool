@@ -60,4 +60,8 @@
   .gallery .gallery-container {
     grid-template-columns: 1fr;
   }
+
+  .gallery .gallery-container .box {
+    margin-bottom: 1.5rem; /* Add space between images on small screens */
+  }
 }

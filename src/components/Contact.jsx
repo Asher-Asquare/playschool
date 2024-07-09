@@ -17,12 +17,10 @@ const Contact = () => {
           <i className="fas fa-envelope"></i>
           <h3>Email</h3>
           <p>truesunshine.playschools@gmail.com</p>
-          <p>truesunshine.playschools@gmail.com</p>
         </div>
         <div className="icons">
           <i className="fas fa-phone"></i>
           <h3>Phone number</h3>
-          <p>+91 798-959-9833</p>
           <p>+91 798-959-9833</p>
         </div>
       </div>

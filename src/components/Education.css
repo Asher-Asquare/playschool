@@ -20,9 +20,9 @@
 }
 
 .education .box {
-    flex: 1;
-    margin: 20px;
-    padding: 25px;
+    flex-basis: calc(30% - 25px); /* Adjust box width for 2 boxes per row with space between */
+    margin-bottom: 20px;
+    padding: 20px;
     background: #f0e285;
     border-radius: 10px;
     text-align: center;
@@ -30,19 +30,43 @@
 }
 
 .education .box h3 {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     margin-bottom: 15px;
 }
 
 .education .box p {
-    font-size: 1rem;
-    margin-bottom: 20px;
+    font-size:0.9rem;
+    margin-bottom: 10px;
 }
 
 .education .box img {
-    max-width: 80%;
+    max-width: 30%;
     height: auto;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Adjustments for small screens */
+@media (max-width: 768px) {
+
+    .education .box {
+        flex-basis: calc(50% - 5px); /* Full width for each box on small screens */
+        margin-bottom: 5px; /* Reduce bottom margin for smaller spacing */
+        padding: 25px;
+    }
+
+    .education .box img {
+        max-width: 30%; /* Decrease image width for small screens */
+    }
+
+    .education .box h3 {
+        font-size: 0.8rem;
+        margin-bottom: 15px;
+    }
+    
+    .education .box p {
+        font-size:0.5rem;
+        margin-bottom: 10px;
+    }
 }
 
 .dark .education {

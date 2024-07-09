@@ -61,3 +61,27 @@
     background: #333;
     color: #fff;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .teacher .box {
+        flex-basis: calc(38.33% - 24px); /* Adjust spacing for three boxes in one row */
+        max-width: calc(48.33% - 18px);
+    }
+
+    .teacher .box h3 {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+    
+    .teacher .box p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    
+    .teacher .box .share i {
+        margin: 0 5px;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+}

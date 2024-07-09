@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="box-container">
         <div className="box">
           <h3> <i className="fas fa-school"></i> True Sunshine </h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, unde</p>
+          <p>Welcome to True Sunshine Preschool, where every day is an adventure in learning! We provide a nurturing environment that fosters creativity, curiosity, and a love for discovery in our young learners.</p>
         </div>
         <div className="box">
           <h3>Quick Links</h3>

@@ -27,29 +27,51 @@ ul {
     text-align: center;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ul li {
-    display: inline-block;
-    margin: 10px 20px;
+    display: inline-block; /* Display inline for horizontal layout */
+    margin: 0 15px; /* Adjust margin for spacing between items */
     font-size: 16px;
     cursor: pointer;
+    position: relative; /* Position relative for dropdown positioning */
 }
 
 ul li a {
+    display: block;
+    padding: 10px 20px; /* Add padding for clickable area */
     color: inherit;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 ul li a:hover {
-    color: #26355D;
+    color: #f0e285; /* Change text color on hover */
+}
+
+ul ul {
+    display: none; /* Hide dropdown menu items by default */
+    position: absolute;
+    background-color: #fff;
+    top: 100%; /* Position dropdown below parent item */
+    left: 0;
+    width: 100%;
+    z-index: 2; /* Ensure dropdown is above other content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for dropdown */
+}
+
+ul li:hover > ul {
+    display: block; /* Display dropdown on hover */
 }
 
 .toggle-icon {
-    width: 32px;
+    display: none; /* Hide toggle icon initially */
+    width: 25px;
     cursor: pointer;
-    margin-left: 40px;
+    margin-left: 10px; /* Adjust margin as needed */
 }
 
 .search-box {
@@ -102,5 +124,77 @@ ul li a:hover {
 }
 
 .dark ul li a:hover {
-    color: #f0e285;
+    color: #f0e285; /* Change text color on hover */
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .navbar {
+        height: 60px;
+    }
+
+    .logo {
+        width: 150px;
+        max-width: 100%;
+        height: 50px;
+    }
+
+    ul {
+        display: none; /* Hide the regular nav links on small screens */
+        position: absolute;
+        top: 60px; /* Adjust based on your navbar height */
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 10px 0;
+        z-index: 1;
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+        align-items: center;
+    }
+
+    ul.active {
+        display: flex; /* Show the dropdown menu when active */
+    }
+
+    ul li {
+        text-align: center;
+        margin: 10px 0;
+        display: block; /* Ensure dropdown items stack vertically */
+    }
+
+    ul li a {
+        padding: 0px 0; /* Adjust padding for vertical layout */
+        color: #26355D;
+    }
+
+    ul li a:hover {
+        color: #f0e285; /* Change text color on hover */
+    }
+
+    .toggle-icon {
+        display: block; /* Show toggle icon for theme change */
+        position: absolute;
+        top: 15px;
+        right: 40px;
+    }
+
+    .search-box {
+        display: none; /* Hide search box on small screens */
+    }
+}
+
+/* Media query for large screens */
+@media (min-width: 769px) {
+    .toggle-icon {
+        display: block; /* Show toggle icon for theme change */
+    }
+
+    .menu-toggle {
+        display: none; /* Hide menu toggle button on large screens */
+    }
+
+    .search-box {
+        display: flex; /* Ensure search box is displayed on large screens */
+    }
 }

@@ -12,6 +12,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Activities from './components/Activities';
 import EnrollNow from './components/SubComponents/EnrollNow';
+import LocationMap from './components/LocationMap';
 // import Admissions from './components/SubComponents/Admissions';
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
                         <Teacher />
                         <Activities />
                         <Gallery />
+                        <LocationMap />
                         <Contact />
                         <Footer />
                     </>
