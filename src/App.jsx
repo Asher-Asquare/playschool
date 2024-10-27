@@ -31,7 +31,6 @@ const App = () => {
                         <Hero />
                         <About />
                         <Education />
-                        <Teacher />
                         <Activities />
                         <Gallery />
                         <LocationMap />

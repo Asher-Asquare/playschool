@@ -14,13 +14,13 @@
   max-width: 600px;
 }
 
-.home .content h3 {
+.home .content h1 {
   font-size: 3rem;
   color: #333;
   margin-bottom: 1rem;
 }
 
-.home .content h3 span {
+.home .content h1 span {
   color: #ff6b6b;
 }
 
@@ -108,13 +108,13 @@
     padding: 4rem 8%;
   }
 
-  .home .content h3 {
+  .home .content h1 {
     font-size: 2rem;
     color: #333;
     margin-bottom: 1rem;
   }
 
-  .home .content h3 span {
+  .home .content h1 span {
     font-size: 1.5rem;
   }
 

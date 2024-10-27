@@ -29,7 +29,7 @@
     transition: background-color 0.3s, color 0.3s;
 }
 
-.education .box h3 {
+.education .box h2 {
     font-size: 1.1rem;
     margin-bottom: 15px;
 }
@@ -58,7 +58,7 @@
         max-width: 30%; /* Decrease image width for small screens */
     }
 
-    .education .box h3 {
+    .education .box h2 {
         font-size: 0.8rem;
         margin-bottom: 15px;
     }

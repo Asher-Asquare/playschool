@@ -34,7 +34,7 @@
     padding: 20px;
 }
 
-.about .row .content h3 {
+.about .row .content h2 {
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
@@ -72,7 +72,7 @@
         text-align: center; /* Center align content */
     }
 
-    .about .row .content h3 {
+    .about .row .content h2 {
         font-size: 1.2rem; /* Decrease font size of heading */
         margin-bottom: 15px; /* Adjust margin */
     }

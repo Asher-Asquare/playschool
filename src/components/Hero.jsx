@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section className="home" id="home">
       <div className="content">
-        <h3>Welcome to our <span>TrueSunshine</span></h3>
+        <h1>Welcome to our <span>TrueSunshine</span></h1>
         <p>Welcome to True Sunshine Preschool, where every day is an adventure in learning! We provide a nurturing environment that fosters creativity, curiosity, and a love for discovery in our young learners.</p>
         <a href="#" className="btn">Learn more</a>
         <Link to="/enroll-now" className="btn">Enroll Now</Link>
